@@ -11,6 +11,6 @@ trait MetaTaggable
      */
     public function meta_tag()
     {
-        return $this->morphOne(MetaTag::class, 'taggable');
+        return $this->morphOne(MetaTag::class, 'taggable')->withDefault();
     }
 }

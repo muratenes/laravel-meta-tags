@@ -9,6 +9,19 @@ class MetaTag extends Model
 {
     use HasFactory;
 
+//    const META_FIELDS = [
+//        'meta_title',
+//        'meta_description',
+//        'meta_keywords',
+//        'og_title',
+//        'og_url',
+//        'og_type',
+//        'og_image',
+//        'twitter_title',
+//        'twitter_card',
+//        'twitter_image_src',
+//    ];
+
     protected $guarded = [
         'id'
     ];

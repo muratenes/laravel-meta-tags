@@ -19,19 +19,19 @@ class CreateMetaTagsTable extends Migration
             $table->unsignedBigInteger('taggable_id');
             $table->string('taggable_type', 100);
             // META TAGS
-            $table->string('title', 150)->nullable();
-            $table->string('description', 255)->nullable();
-            $table->string('keywords', 255)->nullable();
+            $table->string('meta_title', 150)->nullable();
+            $table->string('meta_description', 255)->nullable();
+            $table->string('meta_keywords', 255)->nullable();
             // OG TAGS
-            $table->string('og-title',150)->nullable();
-            $table->string('og-url',200)->nullable();
-            $table->string('og-type',50)->nullable();
-            $table->string('og-image',255)->nullable();
+            $table->string('og_title',150)->nullable();
+            $table->string('og_url',200)->nullable();
+            $table->string('og_type',50)->nullable();
+            $table->string('og_image',255)->nullable();
             // Twitter Tags
-            $table->string('twitter-title',255)->nullable();
+            $table->string('twitter_title',255)->nullable();
 //            $table->string('twitter-site',255)->nullable();
-            $table->string('twitter-card',255)->nullable();
-            $table->string('twitter-image-src',255)->nullable();
+            $table->string('twitter_card',255)->nullable();
+            $table->string('twitter_image-src',255)->nullable();
             $table->timestamps();
         });
     }

@@ -13,7 +13,7 @@ class MetaTagServiceProvider extends ServiceProvider
      */
     public function register()
     {
-
+        $this->mergeConfigFrom(__DIR__ . '/Config/metatags.php', 'metatags');
     }
 
     /**
@@ -26,6 +26,10 @@ class MetaTagServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             // migrations
             $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
+            // publishes
+            $this->publishes([
+                __DIR__ . '/Config/metatags.php' => config_path('metatags.php'),
+            ], 'laravel-meta-tags-config');
         }
 
         // views
