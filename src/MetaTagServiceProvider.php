@@ -13,8 +13,7 @@ class MetaTagServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        // views
-        $this->loadViewsFrom(__DIR__ . '/views', 'laravel-meta-tags');
+
     }
 
     /**
@@ -27,6 +26,8 @@ class MetaTagServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             // migrations
             $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
+            // views
+            $this->loadViewsFrom(__DIR__ . '/views', 'laravel-meta-tags');
             // publishes
             $this->publishes([
                 __DIR__ . '/Views' => base_path('resources/views/muratenes/laravel-meta-tags'),
