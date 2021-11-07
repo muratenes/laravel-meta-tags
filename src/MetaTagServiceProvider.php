@@ -13,7 +13,8 @@ class MetaTagServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        // views
+        $this->loadViewsFrom(__DIR__ . '/views', 'laravel-meta-tags');
     }
 
     /**
