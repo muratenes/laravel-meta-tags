@@ -4,17 +4,17 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit30ffbc7c875798a87ae69afc374ba9ef
+class ComposerStaticInitfdec2e8ae372c8b7fc4f0db803cfe41e
 {
     public static $prefixLengthsPsr4 = array (
         'M' => 
         array (
-            'Murat\\LaravelMetaTags\\' => 22,
+            'MuratEnes\\LaravelMetaTags\\' => 26,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Murat\\LaravelMetaTags\\' => 
+        'MuratEnes\\LaravelMetaTags\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
@@ -27,9 +27,9 @@ class ComposerStaticInit30ffbc7c875798a87ae69afc374ba9ef
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit30ffbc7c875798a87ae69afc374ba9ef::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit30ffbc7c875798a87ae69afc374ba9ef::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit30ffbc7c875798a87ae69afc374ba9ef::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitfdec2e8ae372c8b7fc4f0db803cfe41e::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitfdec2e8ae372c8b7fc4f0db803cfe41e::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitfdec2e8ae372c8b7fc4f0db803cfe41e::$classMap;
 
         }, null, ClassLoader::class);
     }

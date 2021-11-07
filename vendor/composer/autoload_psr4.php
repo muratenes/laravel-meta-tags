@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Murat\\LaravelMetaTags\\' => array($baseDir . '/src'),
+    'MuratEnes\\LaravelMetaTags\\' => array($baseDir . '/src'),
 );

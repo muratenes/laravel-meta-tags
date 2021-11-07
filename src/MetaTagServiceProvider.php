@@ -13,11 +13,7 @@ class MetaTagServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        // controllers
-//        $this->app->make('MuratEnes\LaravelMetaTags\RegionController');
-        // views
-//        $this->loadViewsFrom(__DIR__ . '/views', 'laravel-meta-tags');
-
+        //
     }
 
     /**
@@ -29,7 +25,5 @@ class MetaTagServiceProvider extends ServiceProvider
     {
         // migrations
         $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
-//        // routes
-//        $this->loadRoutesFrom(__DIR__ . '/../routes/web.php');
     }
 }
