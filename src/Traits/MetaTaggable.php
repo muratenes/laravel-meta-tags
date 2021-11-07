@@ -1,5 +1,8 @@
 <?php
 
+namespace MuratEnes\LaravelMetaTags\Traits;
+
+use MuratEnes\LaravelMetaTags\Models\MetaTag;
 
 trait MetaTaggable
 {
@@ -8,6 +11,6 @@ trait MetaTaggable
      */
     public function meta_tag()
     {
-        return $this->morphOne(self::class, 'taggable');
+        return $this->morphOne(MetaTag::class, 'taggable');
     }
 }
