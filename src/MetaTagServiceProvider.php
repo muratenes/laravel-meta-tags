@@ -27,7 +27,7 @@ class MetaTagServiceProvider extends ServiceProvider
             // migrations
             $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
             // views
-            $this->loadViewsFrom(__DIR__ . '/views', 'laravel-meta-tags');
+            $this->loadViewsFrom(__DIR__ . '/Views', 'laravel-meta-tags');
             // publishes
             $this->publishes([
                 __DIR__ . '/Views' => base_path('resources/views/muratenes/laravel-meta-tags'),
