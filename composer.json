@@ -1,17 +1,19 @@
 {
     "name": "murat/laravel-meta-tags",
     "description": "Meta tags for SEO optimization",
-    "autoload": {
-        "psr-4": {
-            "Murat\\LaravelMetaTags\\": "src/"
-        }
-    },
+    "type": "library",
     "authors": [
         {
             "name": "muratenes",
             "email": "m9urat@gmail.com"
         }
     ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "MuratEnes\\LaravelMetaTags\\": "src/"
+        }
+    },
     "extra": {
         "laravel" : {
             "providers" : [
