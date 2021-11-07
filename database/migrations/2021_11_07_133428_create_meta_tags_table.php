@@ -31,7 +31,7 @@ class CreateMetaTagsTable extends Migration
             $table->string('twitter_title',255)->nullable();
 //            $table->string('twitter-site',255)->nullable();
             $table->string('twitter_card',255)->nullable();
-            $table->string('twitter_image-src',255)->nullable();
+            $table->string('twitter_image_src',255)->nullable();
             $table->timestamps();
         });
     }

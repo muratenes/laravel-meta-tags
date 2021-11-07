@@ -15,7 +15,8 @@ return [
             'label' => 'Sayfa Başlığı',
             'max_length' => 150,
             'placeholder' => 'Sayfa başlığı',
-            'help' => ''
+            'help' => '',
+            'validation' => 'required|string|max:100'
         ],
         'meta_description' => [
             'label' => 'Sayfa Açıklaması',
@@ -39,6 +40,28 @@ return [
             'max_length' => 200,
             'placeholder' => 'Open Graph URL',
             'help' => ''
+        ],
+        'og_image' => [
+            'label' => 'OG Image',
+            'max_length' => 255,
+            'placeholder' => 'Open Graph Image URL',
+        ],
+        'twitter_title' => [
+            'label' => 'Twitter Başlık',
+            'max_length' => 255,
+            'placeholder' => 'Twitter Card Başlık',
+            'help' => 'Bu alan boş bırakılırsa sayfa başlığı getirilir.'
+        ],
+        'twitter_card' => [
+            'label' => 'Twitter Card',
+            'max_length' => 255,
+            'placeholder' => 'Twitter Card',
+            'help' => 'summary,summary_large_image,app veya player olmalıdır.'
+        ],
+        'twitter_image_src' => [
+            'label' => 'Twitter Görsel URL',
+            'max_length' => 255,
+            'placeholder' => 'Twitter Görsel URL',
         ]
     ]
 ];

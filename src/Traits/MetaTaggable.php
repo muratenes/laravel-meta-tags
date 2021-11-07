@@ -13,4 +13,26 @@ trait MetaTaggable
     {
         return $this->morphOne(MetaTag::class, 'taggable')->withDefault();
     }
+
+    /**
+     * get all database meta fields
+     *
+     * @return string[]
+     */
+    public static function meta_fields(): array
+    {
+        return array_keys(config('metatags.fields'));
+    }
+
+    /**
+     * get all fields validation rules
+     *
+     * @return string[]
+     */
+    public static function validation_rules(): array
+    {
+        return collect(config('metatags.fields'))->mapWithKeys(function ($item, $key) {
+            return [$key => $item['validation'] ?? 'nullable'];
+        })->toArray();
+    }
 }
