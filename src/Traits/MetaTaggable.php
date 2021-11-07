@@ -35,4 +35,15 @@ trait MetaTaggable
             return [$key => $item['validation'] ?? 'nullable'];
         })->toArray();
     }
+
+    /**
+     * get fields when type = 'meta'
+     *
+     */
+    public static function getFieldsByType(string $type = 'meta'): array
+    {
+        return collect(config('metatags.fields'))->filter(function ($item) use ($type) {
+            return ($item['meta_type'] ?? false ) == $type;
+        })->toArray();
+    }
 }
