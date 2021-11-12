@@ -17,7 +17,8 @@ return [
             'placeholder' => 'Sayfa başlığı',
             'help' => '',
             'validation' => 'nullable|string|max:100',
-            'meta_type' => 'title'
+            'meta_type' => 'title',
+            'key' => 'title'
         ],
         'meta_description' => [
             'label' => 'Sayfa Açıklaması',
@@ -25,7 +26,8 @@ return [
             'placeholder' => 'Sayfa hakkında kısa açıklama',
             'validation' => 'nullable|string|max:255',
             'help' => '',
-            'meta_type' => 'meta'
+            'meta_type' => 'meta',
+            'key' => 'description'
         ],
         'meta_keywords' => [
             'label' => 'Kelimeler',
@@ -33,6 +35,7 @@ return [
             'placeholder' => 'Kelimeler arasına virgül koyarak yazınız örnek: kelime1,kelime2',
             'meta_type' => 'meta',
             'validation' => 'nullable|string|max:255',
+            'key' => 'keywords'
         ],
         'og_title' => [
             'label' => 'OG Başlığı',
@@ -41,6 +44,7 @@ return [
             'help' => 'Boş bırakılırsa sayfa başlığını alır',
             'meta_type' => 'meta-property',
             'validation' => 'nullable|string|max:150',
+            'key' => 'og:title'
         ],
         'og_url' => [
             'label' => 'OG URL',
@@ -49,6 +53,7 @@ return [
             'help' => '',
             'meta_type' => 'meta-property',
             'validation' => 'nullable|string|max:200',
+            'key' => 'og:url'
         ],
         'og_type' => [
             'label' => 'OG Type',
@@ -57,6 +62,7 @@ return [
             'help' => 'https://ogp.me/#type_music.song adresinden tümünü görebilirsiniz.',
             'meta_type' => 'meta-property',
             'validation' => 'nullable|string|max:50',
+            'key' => 'og:type'
         ],
         'og_image' => [
             'label' => 'OG Image',
@@ -64,14 +70,7 @@ return [
             'placeholder' => 'Open Graph Image URL',
             'meta_type' => 'meta-property',
             'validation' => 'nullable|string|max:255',
-        ],
-        'twitter_title' => [
-            'label' => 'Twitter Başlık',
-            'max_length' => 150,
-            'placeholder' => 'Twitter Card Başlık',
-            'help' => 'Bu alan boş bırakılırsa sayfa başlığı getirilir.',
-            'meta_type' => 'meta',
-            'validation' => 'nullable|string|max:150',
+            'key' => 'og:image'
         ],
         'twitter_card' => [
             'label' => 'Twitter Card',
@@ -80,13 +79,7 @@ return [
             'help' => 'summary,summary_large_image,app veya player olmalıdır.',
             'meta_type' => 'meta',
             'validation' => 'nullable|string|max:30',
+            'key' => 'twitter:card'
         ],
-        'twitter_image_src' => [
-            'label' => 'Twitter Görsel URL',
-            'max_length' => 255,
-            'placeholder' => 'Twitter Görsel URL',
-            'meta_type' => 'meta',
-            'validation' => 'nullable|string|max:255',
-        ]
     ]
 ];
