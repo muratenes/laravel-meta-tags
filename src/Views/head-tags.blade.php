@@ -1,5 +1,5 @@
-@if($item->meta_tag->title)
-    <title>{{ $item->meta_tag->title }}</title>
+@if($item->meta_tag->meta_title)
+    <title>{{ $item->meta_tag->meta_title }}</title>
 @endif
 @foreach(\MuratEnes\LaravelMetaTags\Traits\MetaTaggable::getFieldsByType() as $name => $field)
     <meta name="{{ $name }}" content="{{ $item->meta_tag->{$name} }}"/>
