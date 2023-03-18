@@ -16,7 +16,7 @@ return [
             'max_length' => 150,
             'placeholder' => 'Sayfa başlığı',
             'help' => '',
-            'validation' => 'nullable|string|max:100',
+            'validation' => 'nullable|string|max:150',
             'meta_type' => 'title',
             'key' => 'title'
         ],
